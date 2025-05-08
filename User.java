@@ -1,7 +1,12 @@
 public class User {
     private String _name;
-    private String _membership="No Value";
+    private String _membership="Bronze";
     int age;
+
+    public String toString(){//method overiding when we remove the attibutes to the users and leave it to u and u2 in println it defaults to toString so we over ride it.
+        return get_name() + " " + get_membership();
+
+    }
 
     public User(){
 

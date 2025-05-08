@@ -3,7 +3,7 @@ public class Main{
         System.out.println("Hello Nati");
         User u = new User("nati", "Gold");
         User u2 = new User();
-        System.out.println(u2.get_name());
-        System.out.println(u2.get_membership());
+        System.out.println(u);
+        System.out.println(u2);
     }
 }
