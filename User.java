@@ -5,7 +5,15 @@ public class User {
 
     public String toString(){//method overiding when we remove the attibutes to the users and leave it to u and u2 in println it defaults to toString so we over ride it.
         return get_name() + " " + get_membership();
+    }
 
+    public boolean equals(User u2){// method overriding to determine and remove simillarities
+        if (get_name() == u2.get_name() && get_membership() == u2.get_membership()){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     public User(){
